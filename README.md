@@ -2,51 +2,56 @@
 
 ## 📌 Problem
 Air pollution is one of the biggest environmental challenges, affecting both health and climate.  
-The U.S. Pollution dataset (2006–2010) records daily values of four major pollutants:
+The U.S. Pollution dataset (2006–2010) contained thousands of rows of data across four pollutants:
 - Carbon Monoxide (CO)
 - Ozone (O3)
 - Sulphur Dioxide (SO2)
 - Nitrogen Dioxide (NO2)
 
-The raw dataset was large, complex, and not immediately insightful.  
-The challenge was: **How do we transform this raw data into an interactive and meaningful analysis?**
+The dataset was large and complex, making it difficult to understand at first glance.  
+The challenge: **How can we transform this raw dataset into clear, interactive insights?**
 
 ---
 
-## 💡 Solution
-I designed an interactive **Power BI Dashboard** that converts the dataset into a structured analysis with clear insights:
-- **Page 1 – Overview**  
-  - Pollution categories with page navigation buttons  
-  - Slicers for State, City, County  
-  - Filled U.S. map showing pollutants by state  
-  - Quarter-wise pollutant bifurcation  
+## 💡 Solution & Features
+I built a multi-page **Power BI Dashboard** with the following features:
 
-- **Page 2–5 – Detailed Analysis (CO, O3, SO2, NO2)**  
-  - Top 10 states by pollutant concentration  
-  - KPI Cards (Max Hour, Max Value, Units)  
-  - Line charts for pollutant trends (2006–2010)  
-  - Highlighted tables with conditional formatting (highest in red, lowest in green)  
-  - Sync slicers for interactive filtering across pages  
+- **Interactive Overview Page**  
+  - Slicers for State, City, County  
+  - Filled map of U.S. states showing pollutant spread  
+  - Quarter-wise bifurcation of pollutants  
+  - **Page Navigation buttons** → Overview links directly to pollutant-specific pages (CO, O3, SO2, NO2)
+
+- **Pollutant-Specific Pages (CO, O3, SO2, NO2)**  
+  - KPI Cards showing 1st max hour, max value, and pollutant units  
+  - Top 10 states with highest pollutants  
+  - Tables with conditional formatting (highest = red, lowest = green)  
+  - Line charts showing AQI trends from 2006–2010  
+  - Highlighting the city with the highest pollutant levels  
+
+- **Sync Slicers**  
+  - Date-based filtering across all pollutant pages  
+  - Makes comparison easier between states and time periods  
 
 ---
 
 ## 📊 Key Insights
-- **CO & O3** were highest in border cities like *Mexicali*.  
-- **Oklahoma** recorded alarming peaks for **SO2 and NO2**.  
-- Yearly analysis showed fluctuating but persistent pollution levels across 2006–2010.  
+- **Mexicali** recorded the highest CO and O3 levels.  
+- **Oklahoma** showed alarming spikes for SO2 and NO2.  
+- Seasonal and yearly trends revealed persistent pollution levels across states between 2006–2010.  
 
 ---
 
 ## 🚀 Tools Used
 - **Power BI Desktop**  
-- Data cleaning (null values → 0)  
-- Interactive visuals (Maps, Slicers, Line/Bar Charts, KPI Cards)  
+- Data cleaning (null → 0 replacement)  
+- Interactive visuals (Maps, Slicers, KPI Cards, Line/Bar Charts, Conditional Formatting)  
 
 ---
 
-## 📂 Files in this Repo
-- `U.S Pollution Dashboard.pdf` → Final Power BI export  
+## 📂 Files in this Repository
+- [US Pollution Dashboard (PBIX)]https://drive.google.com/file/d/1v9JEsNi8K0fA4sXe6saC88ut2hZxVLnO/view?usp=sharing – Download the interactive Power BI file (open in Power BI Desktop).  
 
 ---
 
----
+
